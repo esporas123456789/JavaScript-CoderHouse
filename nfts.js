@@ -1,7 +1,7 @@
 //formulario 
 function ValorString (DatosDelUsuario) {
-    let IngreseSusDatos = prompt (DatosDelUsuario)
-    alert(IngreseSusDatos)
+    let PongaSusDatos = prompt (DatosDelUsuario)
+    alert(PongaSusDatos)
 }
 
 ValorString("Nombre");
@@ -11,11 +11,13 @@ ValorString("Documento");
 ValorString("mail");
 
 
+function IngresarCuenta (IngresoDelUsuario) {
+    let IngreseSuCuenta = prompt (IngresoDelUsuario)
+    console.log(IngreseSuCuenta)
+}
 
-let NombredelUsuario = prompt ("ingrese su nombre de usuario")
-let Contraseña = prompt ("ingrese su contraseña")
-let Ingresando = NombredelUsuario + " " + Contraseña;
-console.log(Ingresando)
+IngresarCuenta("ingrese su nombre de usuario")
+IngresarCuenta("ingrese su contraseña")
 
 
 
@@ -40,27 +42,18 @@ if (IngreseUnProducto == producto1) {
     alert ("Chakra, superheroe de marvel")
 } else {
     alert ("Ya no se venden mas tipos de NFTS")
-} function CasosdelNFT (CasosDeLosProductos) {
-    const ElegirCaso = prompt (CasosDeLosProductos)
-    console.log (ElegirCaso)
-}
-
-Precios("ingrese el caso de nft");
-Precios("ingrese el caso de nft");
-Precios("ingrese el caso de nft");
-Precios("ingrese el caso de nft");
-Precios("ingrese el caso de nft");
+} 
 
 function Precios (PreciosDeLosProductos) {
     const Precios = prompt (PreciosDeLosProductos)
     console.log(Precios)
 }
 
-Precios (1000)
-Precios (1500)
-Precios (2000)
-Precios (2500)
-Precios (3000)
+Precios ("1000, juegos")
+Precios ("1500, articulos")
+Precios ("2000, cuadros")
+Precios ("2500, figuritas")
+Precios ("3000, empresas")
 
 const CantidadDeProductos = (parseInt ("SeisProductos"))
   for (let i=1; i<=6; i=i+1) {
