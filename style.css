@@ -1,0 +1,15 @@
+.cuerpo-inversion {
+    background-color: rgba(0, 0, 0, 0.727);
+    color: white;
+}
+
+.titulo {
+    text-align: center;
+    text-decoration: underline;
+    margin: 10px;
+}
+
+.flex-header {
+    display: flex;
+    justify-content: space-around;
+}
