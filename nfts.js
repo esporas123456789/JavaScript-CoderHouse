@@ -1,7 +1,22 @@
+// Idioma 
+const IngresarIdioma = prompt ("elija el idioma que prefiera")
+const Idioma = "Español"
+const Idioma1 = "Ingles"
+const Idioma2 = "Frances"
+
+if (IngresarIdioma == Idioma) {
+    alert ("Traducido al Español")
+} else if (IngresarIdioma == Idioma1) {
+    alert ("Traducido al ingles")
+} else if (IngresarIdioma == Idioma2){
+    alert("Traducido al Frances")
+}
+
+
 //formulario 
 function ValorString (DatosDelUsuario) {
-    let PongaSusDatos = prompt (DatosDelUsuario)
-    alert(PongaSusDatos)
+    let Registrar = prompt (DatosDelUsuario)
+    alert(Registrar)
 }
 
 ValorString("Nombre");
@@ -11,15 +26,15 @@ ValorString("Documento");
 ValorString("mail");
 
 
-function IngresarCuenta (IngresoDelUsuario) {
-    let IngreseSuCuenta = prompt (IngresoDelUsuario)
-    console.log(IngreseSuCuenta)
+let  IngresarNombre = prompt ("ingresar nombre de usuario") 
+let  IngresarContraseña = prompt ("ingresar contraseña") 
+
+function IngresarCuenta () {
+    alert( IngresarNombre + " " + IngresarContraseña)
 }
 
-IngresarCuenta("ingrese su nombre de usuario")
-IngresarCuenta("ingrese su contraseña")
-
-
+IngresarCuenta ();
+ 
 
 //productos
 let IngreseUnProducto = prompt ("ingrese el producto deseado")
@@ -44,6 +59,11 @@ if (IngreseUnProducto == producto1) {
     alert ("Ya no se venden mas tipos de NFTS")
 } 
 
+const CantidadDeProductos = (parseInt ("SeisProductos"))
+  for (let i=1; i<=6; i=i+1) {
+  console.log(i);
+}
+
 function Precios (PreciosDeLosProductos) {
     const Precios = prompt (PreciosDeLosProductos)
     console.log(Precios)
@@ -55,26 +75,6 @@ Precios ("2000, cuadros")
 Precios ("2500, figuritas")
 Precios ("3000, empresas")
 
-let Descuentos = parseFloat ( prompt ("INGRESE UN PRECIO") )
-DescuentoJuegos = Descuentos - (Descuentos * 0,90)
-DescuentoArticulos = Descuentos - (Descuentos * 0,50)
-DescuentoCuadros = Descuentos - (Descuentos * 0,30)
-DescuentoFiguritas = Descuentos - (Descuentos * 0,70)
-DescuentoEmpresas = Descuentos - (Descuentos * 0,80)
-console.log(DescuentoJuegos)
-console.log(DescuentoArticulos)
-console.log(DescuentoCuadros)
-console.log(DescuentoFiguritas)
-console.log(DescuentoEmpresas)
-
-
-const CantidadDeProductos = (parseInt ("SeisProductos"))
-  for (let i=1; i<=6; i=i+1) {
-  console.log(i);
-}
-
-
-//switch
 let Entrada = prompt ("ingrese el caso de NFT para invertir o comprar")
 switch (Entrada) {
     case "A":
@@ -101,8 +101,21 @@ do {
 seguir = prompt("Debe seguir en el bucle")
 } while (seguir!== "no quiero comprar mas")
 
-let Entrada = prompt ("ingrese el descuetno que desea")
-switch (Entrada) {
+
+let Descuentos = parseFloat ( prompt ("INGRESE UN PRECIO") )
+DescuentoJuegos = Descuentos - (Descuentos * 0,90)
+DescuentoArticulos = Descuentos - (Descuentos * 0,50)
+DescuentoCuadros = Descuentos - (Descuentos * 0,30)
+DescuentoFiguritas = Descuentos - (Descuentos * 0,70)
+DescuentoEmpresas = Descuentos - (Descuentos * 0,80)
+console.log(DescuentoJuegos)
+console.log(DescuentoArticulos)
+console.log(DescuentoCuadros)
+console.log(DescuentoFiguritas)
+console.log(DescuentoEmpresas)
+
+let Rebajas = prompt ("ingrese el descuento que desea")
+switch (Rebajas) {
     case "F":
         alert ("Descuento de juegos")
         break
@@ -120,9 +133,11 @@ switch (Entrada) {
         break
 
     case "J":
-        alert ("Descutno de empresas")
+        alert ("Descuento de empresas")
         break
-} const proceder = true 
+} let proceder = true 
 do {
-    proceder = prompt ("desea seguir en el bucle")
-} while (proceder !== "no quiero mas descuentos")
+proceder = prompt ("Debe seguir en el bucle")
+} while (proceder!== "no quiero mas descuentos")
+
+
