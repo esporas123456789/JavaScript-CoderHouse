@@ -55,11 +55,23 @@ Precios ("2000, cuadros")
 Precios ("2500, figuritas")
 Precios ("3000, empresas")
 
+let Descuentos = parseFloat ( prompt ("INGRESE UN PRECIO") )
+DescuentoJuegos = Descuentos - (Descuentos * 0,90)
+DescuentoArticulos = Descuentos - (Descuentos * 0,50)
+DescuentoCuadros = Descuentos - (Descuentos * 0,30)
+DescuentoFiguritas = Descuentos - (Descuentos * 0,70)
+DescuentoEmpresas = Descuentos - (Descuentos * 0,80)
+console.log(DescuentoJuegos)
+console.log(DescuentoArticulos)
+console.log(DescuentoCuadros)
+console.log(DescuentoFiguritas)
+console.log(DescuentoEmpresas)
+
+
 const CantidadDeProductos = (parseInt ("SeisProductos"))
   for (let i=1; i<=6; i=i+1) {
   console.log(i);
 }
-
 
 
 //switch
@@ -84,7 +96,33 @@ switch (Entrada) {
     case "E":
         alert ("comprar el NFT cinco de la lista")
         break
-} let NoRepetir = false
+} let seguir = true
 do {
-  alert("limite de NFTS: 5")
-} while (NoRepetir)
+seguir = prompt("Debe seguir en el bucle")
+} while (seguir!== "no quiero comprar mas")
+
+let Entrada = prompt ("ingrese el descuetno que desea")
+switch (Entrada) {
+    case "F":
+        alert ("Descuento de juegos")
+        break
+
+    case "G":
+        alert ("Descuento de articulos")
+        break
+
+    case "H":
+        alert ("Descuento de cuadros")
+        break
+
+    case "I":
+        alert ("Descuento de figuritas")
+        break
+
+    case "J":
+        alert ("Descutno de empresas")
+        break
+} const proceder = true 
+do {
+    proceder = prompt ("desea seguir en el bucle")
+} while (proceder !== "no quiero mas descuentos")
