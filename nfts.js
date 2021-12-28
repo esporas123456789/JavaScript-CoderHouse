@@ -1,4 +1,10 @@
-// Idioma 
+// objetos
+function leyendo() {
+    console.log ("leyendo")
+}
+
+
+//Idioma 
 const IngresarIdioma = prompt ("elija el idioma que prefiera")
 const Idioma = "Español"
 const Idioma1 = "Ingles"
@@ -12,29 +18,38 @@ if (IngresarIdioma == Idioma) {
     alert("Traducido al Frances")
 }
 
+const CantidadDeProductos = (parseInt ("SeisProductos"))
+  for (let i=1; i<=6; i=i+1) {
+  console.log(i);
+}
+
 
 //formulario 
-function ValorString (DatosDelUsuario) {
+function PedirDatosDelUsuario (DatosDelUsuario) {
     let Registrar = prompt (DatosDelUsuario)
     alert(Registrar)
-}
-
-ValorString("Nombre");
-ValorString("Apellido");
-ValorString("Edad");
-ValorString("Documento");
-ValorString("mail");
-
-
-let  IngresarNombre = prompt ("ingresar nombre de usuario") 
-let  IngresarContraseña = prompt ("ingresar contraseña") 
-
-function IngresarCuenta () {
+} function IngresarCuenta () {
+    let  IngresarNombre = prompt ("ingresar nombre de usuario") 
+    let  IngresarContraseña = prompt ("ingresar contraseña") 
     alert( IngresarNombre + " " + IngresarContraseña)
+} function Precios (PreciosDeLosProductos) {
+    const Precios = prompt (PreciosDeLosProductos)
+    console.log(Precios)
 }
+PedirDatosDelUsuario("Nombre");
+PedirDatosDelUsuario("Apellido")
+PedirDatosDelUsuario("Edad");
+PedirDatosDelUsuario("Documento");
+PedirDatosDelUsuario("mail");
 
 IngresarCuenta ();
- 
+
+Precios ("1000, juegos")
+Precios ("1500, articulos")
+Precios ("2000, cuadros")
+Precios ("2500, figuritas")
+Precios ("3000, empresas")
+
 
 //productos
 let IngreseUnProducto = prompt ("ingrese el producto deseado")
@@ -59,21 +74,6 @@ if (IngreseUnProducto == producto1) {
     alert ("Ya no se venden mas tipos de NFTS")
 } 
 
-const CantidadDeProductos = (parseInt ("SeisProductos"))
-  for (let i=1; i<=6; i=i+1) {
-  console.log(i);
-}
-
-function Precios (PreciosDeLosProductos) {
-    const Precios = prompt (PreciosDeLosProductos)
-    console.log(Precios)
-}
-
-Precios ("1000, juegos")
-Precios ("1500, articulos")
-Precios ("2000, cuadros")
-Precios ("2500, figuritas")
-Precios ("3000, empresas")
 
 let Entrada = prompt ("ingrese el caso de NFT para invertir o comprar")
 switch (Entrada) {
